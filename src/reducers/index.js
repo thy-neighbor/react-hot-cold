@@ -21,8 +21,9 @@ export const gameReducer = (state=initialState, action) => {
             auralStatus:action.auralStatus
         });
     }else if(action.type === SET_RESTART){
+        const {guesses,feedback,auralStatus,correctAnswer}=initialState;
         return Object.assign({},state,{
-            initialState
+            guesses,feedback,auralStatus,correctAnswer
         });
     }
 

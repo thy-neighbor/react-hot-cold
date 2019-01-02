@@ -1,9 +1,9 @@
 //actions
 
 export const SET_GUESSES = 'SET_GUESSES';
-export const setGuesses = guesses =>({
+export const setGuesses = guess =>({
     type:SET_GUESSES,
-    guesses
+    guess
 });
 
 export const SET_FEEDBACK = 'SET_FEEDBACK';

@@ -21,7 +21,7 @@ export class Game extends React.Component {
       return;
     }
 
-    const difference = Math.abs(guess - this.state.correctAnswer);
+    const difference = Math.abs(guess - this.props.correctAnswer);
 
     let feedback;
     if (difference >= 50) {
